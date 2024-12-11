@@ -1,0 +1,167 @@
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Quiz Container */
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Header Styles */
+#quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Question Container */
+#question-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Option Buttons */
+#options-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    background-color: #f0f0f0; /* Default background */
+    color: #000; /* Default text color */
+}
+
+/* Answer Bar */
+#answer-bar {
+    height: 10px;
+    width: 0%; /* Start at 0% width */
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Display Correct Answer Text */
+#correct-answer-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect for Navigation Buttons */
+.navigation button:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled Navigation Buttons */
+.navigation button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Result Section */
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#result p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Restart Button */
+#result button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect for Restart Button */
+#result button:hover {
+    background-color: #388e3c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .quiz-container {
+        max-width: 100%; /* Allow it to take full width on smaller devices */
+        padding: 15px; /* Less padding on small screens */
+    }
+
+    #question-container {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    #options-container button {
+        font-size: 14px; /* Smaller text on buttons */
+        padding: 8px; /* Adjust button padding */
+    }
+
+    .navigation button {
+        font-size: 14px; /* Smaller font size for navigation buttons */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 10px; /* Even less padding on very small screens */
+    }
+
+    #question-container {
+        font-size: 14px; /* Smaller text for questions */
+    }
+
+    #options-container button {
+        font-size: 12px; /* Smaller font for buttons */
+        padding: 6px; /* Adjust button padding for tiny screens */
+    }
+
+    .navigation button {
+        font-size: 12px; /* Smaller font size for navigation buttons */
+        padding: 6px 10px; /* Adjust button padding for tiny screens */
+    }
+}

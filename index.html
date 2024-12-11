@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz-header">
+      <h1>Tamil Quiz</h1>
+    </div>
+    <div id="quiz">
+      <div id="question-container"></div>
+      <div id="options-container"></div>
+      <div id="answer-bar"></div> <!-- The bar for indicating correct or incorrect answers -->
+      <div id="correct-answer-text"></div> <!-- The text showing the correct answer if the user selects the wrong one -->
+      <div class="navigation">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="end-btn">End Quiz</button>
+      </div>
+    </div>
+  </div>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
